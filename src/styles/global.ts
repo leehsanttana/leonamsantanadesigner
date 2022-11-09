@@ -15,15 +15,15 @@ export const GlobalStyle = createGlobalStyle`
     line-height: ${(props) => props.theme.lineHeight.size01};
   }
 
-  h1, h5 {
+  h1, h5, button, a {
     font-weight: ${(props) => props.theme.fontWeight.bold};
   }
 
-  h2, h4, button {
+  h2, h4 {
     font-weight: ${(props) => props.theme.fontWeight.medium};
   }
 
-  h3, h6, p, span, label {
+  h3, h6, p, label {
     font-weight: ${(props) => props.theme.fontWeight.regular};
   }
 
@@ -50,4 +50,9 @@ export const GlobalStyle = createGlobalStyle`
   h6 {
     font-size: ${(props) => props.theme.fontSize.size06};
   }
+
+  a, button {
+    font-size: ${(props) => props.theme.fontSize.size07};
+  }
+
 `;
